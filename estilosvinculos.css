@@ -21,7 +21,7 @@ body {
 h1 {
     text-align: center;
     padding: 20px;
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: 70px;
     margin: 20px auto;
     word-wrap: break-word;
     color: #265ae7;
