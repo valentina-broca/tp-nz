@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>VINCULOS TEMPRANOS Y LENGUAJE</title>
+        <link rel="stylesheet" href="estilosvinculos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="barra-superior">
+
+           <div class="rayitas">=</div>
+           
+            <div class="login">
+            Iniciar Sesion
+           </div>
+        </div>
+          <h1>TALLER DE ORIENTACION PARENTAL</h1>
+
+        <div>
+          <img src="modelosfamilias.png" class="banner">
+        </div>
+
+        <div class="menu">
+           <button class="apego" onclick="mostrar('apego')">
+           Vinculos de Apego
+           </button>
+
+           <button class="lenguaje" onclick="mostrar('lenguaje')">
+            Importancia del Lenguaje
+           </button>
+        
+           <button class="juego" onclick="mostrar('Juego')">
+            Rol del Juego
+           </button>
+
+           <button class="dibujo" onclick="mostrar('Dibujo')">
+            Relevancia de los Dibujos
+           </button>
+
+        </div>
+
+        <div id="apego" class="contenido">
+            <h2>Vinculos de Apego</h2>
+            <p> hnieubcwikebk</p>
+        </div>
+
+        <div id="lenguaje" class="contenido">
+            <h2>Lenguaje</h2>
+            <p>kbiweubwieb</p>
+        </div>
+
+        <div id="Juego" class="contenido">
+           <img src="construccion.jpg" class="imagenes">
+        </div>
+
+        <div id="Dibujo" class="contenido">
+           <img src="construccion.jpg" class="imagenes">
+        </div>
+    
+    
+        <script>
+          function mostrar(id) {
+            let secciones =
+            document.querySelectorAll('.contenido');
+
+            secciones.forEach(seccion => {
+                seccion.style.display="none";
+            });
+
+            document.getElementById(id).style.display="block";
+           }
+        </script>
+    </body>
+</html>    
